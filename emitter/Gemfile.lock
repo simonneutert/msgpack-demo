@@ -1,0 +1,84 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    async (2.0.1)
+      console (~> 1.10)
+      io-event (~> 1.0.0)
+      timers (~> 4.1)
+    async-container (0.16.12)
+      async
+      async-io
+    async-http (0.56.5)
+      async (>= 1.25)
+      async-io (>= 1.28)
+      async-pool (>= 0.2)
+      protocol-http (~> 0.22.0)
+      protocol-http1 (~> 0.14.0)
+      protocol-http2 (~> 0.14.0)
+    async-http-cache (0.4.2)
+      async-http (~> 0.56)
+    async-io (1.33.0)
+      async
+    async-pool (0.3.9)
+      async (>= 1.25)
+    async-websocket (0.19.0)
+      async-http (~> 0.54)
+      async-io (~> 1.23)
+      protocol-websocket (~> 0.7.0)
+    build-environment (1.13.0)
+    console (1.15.0)
+      fiber-local
+    falcon (0.39.2)
+      async
+      async-container (~> 0.16.0)
+      async-http (~> 0.56.0)
+      async-http-cache (~> 0.4.0)
+      async-io (~> 1.22)
+      build-environment (~> 1.13)
+      bundler
+      localhost (~> 1.1)
+      process-metrics (~> 0.2.0)
+      rack (>= 1.0)
+      samovar (~> 2.1)
+    fiber-local (1.0.0)
+    io-event (1.0.5)
+    localhost (1.1.9)
+    mapping (1.1.1)
+    msgpack (1.5.1)
+    process-metrics (0.2.1)
+      console (~> 1.8)
+      samovar (~> 2.1)
+    protocol-hpack (1.4.2)
+    protocol-http (0.22.5)
+    protocol-http1 (0.14.2)
+      protocol-http (~> 0.22)
+    protocol-http2 (0.14.2)
+      protocol-hpack (~> 1.4)
+      protocol-http (~> 0.18)
+    protocol-websocket (0.7.5)
+      protocol-http (~> 0.2)
+      protocol-http1 (~> 0.2)
+    rack (2.2.3)
+    roda (3.54.0)
+      rack
+    roda-websockets (0.1.0)
+      async-websocket (~> 0.12)
+      falcon (~> 0.33)
+      roda (~> 3.0)
+    samovar (2.1.4)
+      console (~> 1.0)
+      mapping (~> 1.0)
+    timers (4.3.3)
+
+PLATFORMS
+  x86_64-darwin-20
+  x86_64-darwin-21
+
+DEPENDENCIES
+  falcon (~> 0.39.2)
+  msgpack (~> 1.5)
+  roda (~> 3.54)
+  roda-websockets (~> 0.1.0)
+
+BUNDLED WITH
+   2.2.17
