@@ -21,12 +21,12 @@ This is a simple demo showing off a [MsgPack](https://msgpack.org) implementatio
 
 ## Get started!
 
-**Terminal 1** `emitter`
+**Terminal 1** *emitter*
 
 `$ bundle install`  
 `$ bundle exec falcon serve --count 10`
 
-**Terminal 2** `consumer-backend`
+**Terminal 2** *consumer-backend*
 
 `$ npm install`  
 `$ node index.js` or run a debugger (like VS Code)
