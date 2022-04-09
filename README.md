@@ -4,7 +4,7 @@ This is a simple demo showing off a [MsgPack](https://msgpack.org) implementatio
 
 ### Roadmap
 
-- consumer example in the browser
+- [ ] consumer example in the browser ⏳
 
 ## Content
 
